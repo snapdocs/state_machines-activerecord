@@ -4,6 +4,7 @@ rescue LoadError
 end
 require 'minitest/reporters'
 Minitest::Reporters.use!(Minitest::Reporters::SpecReporter.new)
+require "active_record/mass_assignment_security"
 require 'state_machines-activerecord'
 require 'minitest/autorun'
 require 'securerandom'
